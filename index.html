@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title of the Page -->
+  <title>Mohawk Design</title>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Using Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Script for detecting mobile devices -->
+  <script src="MobileBrowserDetection.js"></script>
+</head>
+
+<body>
+  <!-- Creating the navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-1">
+    <!-- First Element in nav bar -->
+    <a class="navbar-brand font-weight-bold" href="index.html">Mohawk
+      <!-- Chaning the text of span tag with javascript for mobile and desktop version -->
+      <span id="show">Desktop</span>
+    </a>
+    <!-- This is the 3 bar button will be visible for small devices -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--Links to other pages in navigation bar of the website -->
+      <ul class="navbar-nav mr-auto" style="font-size: 18px">
+        <li class="nav-item active">
+          <a class="nav-link text-secondary font-weight-bold" href="index.html">Programs</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-secondary font-weight-bold" href="index.html">Faculity</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-secondary font-weight-bold" href="index.html">Students</a>
+        </li>
+      </ul>
+      <!-- Search form -->
+      <form class="form-inline my-2 my-lg-0">
+        <!-- input for searh -->
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- submit button to search -->
+        <button class="btn btn-light my-2 my-sm-0 font-wight-bold" style="font-size: 18px;"
+          type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Responsive Logo below navigation bar -->
+  <div style="border:5px solid black; text-align: center;">
+    <img src="mohawk.png" alt="logo" width="100%">
+  </div>
+  <!-- Responsive boxes -->
+  <div class="container-fluid">
+    <!-- Starting Row -->
+    <div class="row">
+      <!-- Row Elements -->
+      <div class="col-lg-4 col-md-6 col-sm-2 col-xs-12" style="border:5px solid #780032">
+        <h2>Study</h2>
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-8 col-xs-12" style="border:5px solid #B20437">
+        <h2>Learn</h2>
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-2 col-xs-12" style="border:5px solid #F48221">
+        <h2>Work</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Description above the video -->
+  <div class="container-fluid d-none d-sm-block" style="border:5px solid black">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Disclaimer</h2>
+        <p class="text-secondary" style="font-size: 18px; font-weight: 500">Mohawk College is not responsible for lost
+          and stolen computer equipment. Please secure all devices while attending classes and labs</p>
+      </div>
+    </div>
+  </div>
+  <!-- Video Container to Embed video in the web page -->
+  <div class="container-fluid" style="border:5px solid black">
+    <iframe width="100%" height="409" src="https://www.youtube.com/embed/r7j282kViwE" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</body>
+
+</html>
